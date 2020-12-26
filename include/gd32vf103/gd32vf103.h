@@ -172,7 +172,6 @@ typedef enum IRQn
 } IRQn_Type;
 
 /* includes */
-#include "system_gd32vf103.h"
 #include <stdint.h>
 
 /* enum definitions */
@@ -227,14 +226,6 @@ typedef enum {ERROR = 0, SUCCESS = !ERROR} ErrStatus;
 #define FMC_BASE              (AHB1_BUS_BASE + 0x0000A000U)  /*!< FMC base address                 */
 #define CRC_BASE              (AHB1_BUS_BASE + 0x0000B000U)  /*!< CRC base address                 */
 #define USBFS_BASE            (AHB1_BUS_BASE + 0x0FFE8000U)  /*!< USBFS base address               */
-
-/* define marco USE_STDPERIPH_DRIVER */
-#if !defined  USE_STDPERIPH_DRIVER
-#define USE_STDPERIPH_DRIVER
-#endif 
-#ifdef USE_STDPERIPH_DRIVER
-#include "gd32vf103_libopt.h"
-#endif /* USE_STDPERIPH_DRIVER */
 
 #ifdef cplusplus
 }

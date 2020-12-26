@@ -4,7 +4,7 @@
 cmake_minimum_required(VERSION 3.19)
 
 add_library(
-    n200-driver
+    gd32vf103
     OBJECT
         "${CMAKE_CURRENT_SOURCE_DIR}/src/n200-driver/n200_func.c"
         "${CMAKE_CURRENT_SOURCE_DIR}/src/startup/start.S"
@@ -14,7 +14,8 @@ add_library(
     )
 
 target_include_directories(
-    n200-driver
+    gd32vf103
     PUBLIC
         "${CMAKE_CURRENT_SOURCE_DIR}/include/n200-driver"
+        "${CMAKE_CURRENT_SOURCE_DIR}/include/gd32vf103"
 )

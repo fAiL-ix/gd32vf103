@@ -12,3 +12,11 @@ You need to:
 - Set the `SystemCoreClock` to the used system clock
 - Provide a `SystemInit()` function
     - This function should at least set the `SystemCoreClock`
+
+## Using this Library
+
+To use this library in your project, clone this repository somewhere into your project. Then add the library as a subdirectory and link target in your projects `CMakeLists.txt`.
+
+`add_subdirectory(path/to/this/lib)` [CMake Doc](https://cmake.org/cmake/help/latest/command/add_subdirectory.html)
+
+`target_link_libraries(<your target> gd32vf103)` [CMake Doc](https://cmake.org/cmake/help/latest/command/target_link_libraries.html)

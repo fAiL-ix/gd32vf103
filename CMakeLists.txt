@@ -11,6 +11,7 @@ add_library(
         "${CMAKE_CURRENT_SOURCE_DIR}/src/startup/entry.S"
         "${CMAKE_CURRENT_SOURCE_DIR}/src/startup/handlers.c"
         "${CMAKE_CURRENT_SOURCE_DIR}/src/startup/init.c"
+        "${CMAKE_CURRENT_SOURCE_DIR}/src/stubs/_exit.c"
     )
 
 target_include_directories(

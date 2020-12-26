@@ -29,4 +29,4 @@ You also have to define your target board type which is done by defining one of 
 
 To define it you can add `target_compile_definitions` to your project.
 
-`target_compile_definitions(<your target> PUBLIC GD32VF103V_EVAL)` [CMake Doc](https://cmake.org/cmake/help/latest/command/target_compile_definitions.html)
+`target_compile_definitions(gd32vf103 PUBLIC GD32VF103V_EVAL)` [CMake Doc](https://cmake.org/cmake/help/latest/command/target_compile_definitions.html)

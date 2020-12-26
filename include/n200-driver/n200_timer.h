@@ -3,9 +3,6 @@
 #ifndef N200_TIMER_H
 #define N200_TIMER_H
 
-/** SystemCoreClock has to be set by the user */
-extern volatile uint32_t SystemCoreClock;
-
 #define TIMER_MSIP 0xFFC
 #define TIMER_MSIP_size   0x4
 #define TIMER_MTIMECMP 0x8

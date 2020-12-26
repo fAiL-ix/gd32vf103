@@ -55,6 +55,9 @@ OF SUCH DAMAGE.
  #define     __O     volatile             /*!< Defines 'write only' permissions                */
  #define     __IO    volatile             /*!< Defines 'read / write' permissions              */
 
+/** SystemCoreClock has to be set by the user */
+extern volatile uint32_t SystemCoreClock;
+
  /* define value of high speed crystal oscillator (HXTAL) in Hz */
  #if !defined  HXTAL_VALUE  
    #ifdef GD32VF103R_START

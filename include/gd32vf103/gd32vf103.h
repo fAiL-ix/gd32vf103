@@ -55,6 +55,9 @@ OF SUCH DAMAGE.
  #define     __O     volatile             /*!< Defines 'write only' permissions                */
  #define     __IO    volatile             /*!< Defines 'read / write' permissions              */
 
+/* includes */
+#include <stdint.h>
+
 /** SystemCoreClock has to be set by the user */
 extern volatile uint32_t SystemCoreClock;
 
@@ -173,9 +176,6 @@ typedef enum IRQn
 
     ECLIC_NUM_INTERRUPTS
 } IRQn_Type;
-
-/* includes */
-#include <stdint.h>
 
 /* enum definitions */
 typedef enum {DISABLE = 0, ENABLE = !DISABLE} EventStatus, ControlStatus;

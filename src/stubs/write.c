@@ -12,6 +12,8 @@
 
 #include "stub.h"
 
+ssize_t _write(int fd, const void* ptr, size_t len) __attribute__(( weak ));
+
 ssize_t _write(int fd, const void* ptr, size_t len) {
     return _stub(EBADF);
 }

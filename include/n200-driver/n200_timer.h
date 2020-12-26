@@ -3,9 +3,7 @@
 #ifndef N200_TIMER_H
 #define N200_TIMER_H
 
-/**
- * Compatibility definitions and RISC-V specific values.
- */
+/** SystemCoreClock has to be set by the user */
 extern volatile unsigned long SystemCoreClock;
 
 #define TIMER_MSIP 0xFFC

@@ -12,6 +12,7 @@ add_library(
         "${CMAKE_CURRENT_SOURCE_DIR}/src/startup/handlers.c"
         "${CMAKE_CURRENT_SOURCE_DIR}/src/startup/init.c"
         "${CMAKE_CURRENT_SOURCE_DIR}/src/stubs/_exit.c"
+        "${CMAKE_CURRENT_SOURCE_DIR}/src/stubs/write.c"
     )
 
 target_include_directories(
@@ -19,4 +20,6 @@ target_include_directories(
     PUBLIC
         "${CMAKE_CURRENT_SOURCE_DIR}/include/n200-driver"
         "${CMAKE_CURRENT_SOURCE_DIR}/include/gd32vf103"
+    PRIVATE
+        "${CMAKE_CURRENT_SOURCE_DIR}/src/stubs"
 )

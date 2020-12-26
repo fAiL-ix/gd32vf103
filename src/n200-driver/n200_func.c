@@ -1,5 +1,4 @@
 /* See LICENSE for license details. */
-#include <gd32vf103.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

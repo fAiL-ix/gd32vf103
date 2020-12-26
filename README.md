@@ -20,3 +20,13 @@ To use this library in your project, clone this repository somewhere into your p
 `add_subdirectory(path/to/this/lib)` [CMake Doc](https://cmake.org/cmake/help/latest/command/add_subdirectory.html)
 
 `target_link_libraries(<your target> gd32vf103)` [CMake Doc](https://cmake.org/cmake/help/latest/command/target_link_libraries.html)
+
+You also have to define your `target board type` which can be one of those values:
+- `GD32VF103C_START`
+- `GD32VF103R_START`
+- `GD32VF103T_START`
+- `GD32VF103V_EVAL`
+
+To define it you add `target_compile_definitions` to your project.
+
+`target_compile_definitions(<your target> PUBLIC GD32VF103V_EVAL)` [CMake Doc](https://cmake.org/cmake/help/latest/command/target_compile_definitions.html)

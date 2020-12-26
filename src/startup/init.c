@@ -6,6 +6,8 @@
 #include "n200_func.h"
 
 extern uint32_t disable_mcycle_minstret();
+extern void SystemInit(void);
+
 void _init()
 {
 	SystemInit();

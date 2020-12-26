@@ -1,3 +1,7 @@
+## User defined ignores
+# The cmake tools are only needed for testing because this project is library
+tools/cmake
+
 ## CMake ignores
 CMakeLists.txt.user
 CMakeCache.txt

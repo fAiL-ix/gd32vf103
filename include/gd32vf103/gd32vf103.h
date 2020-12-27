@@ -59,7 +59,7 @@ OF SUCH DAMAGE.
 #include <stdint.h>
 
 /** SystemCoreClock has to be set by the user */
-extern volatile uint32_t SystemCoreClock;
+extern uint32_t SystemCoreClock;
 
  /* define value of high speed crystal oscillator (HXTAL) in Hz */
  #if !defined  HXTAL_VALUE  
